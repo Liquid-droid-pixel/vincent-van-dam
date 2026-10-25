@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincent van Dam</title>
+  <meta name="description" content="Persoonlijke website: over mij, vaardigheden, projecten, ervaring en meer.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>try{var t=localStorage.getItem("thema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="privacy" data-title="Privacyverklaring">
+  <a class="skip" href="#home">Ga naar inhoud</a>
+  <div class="bg-fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="grid"></i></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="#home" class="logo" id="logo" aria-label="Naar boven"></a>
+      <nav class="links" id="links" aria-label="Hoofdnavigatie"></nav>
+      <div class="tools">
+        <div class="pop-wrap">
+          <button class="icon-btn" id="prefBtn" aria-label="Voorkeuren" aria-expanded="false" aria-controls="prefMenu"></button>
+          <div class="pop" id="prefMenu" hidden>
+            <p class="pop-h">Voorkeuren</p>
+            <div class="pop-row"><span>Taal</span>
+              <select id="lang" aria-label="Taal" translate="no">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+            <div class="pop-row"><span>Thema</span>
+              <select id="themeSel" aria-label="Thema">
+                <option value="dark">Donker</option>
+                <option value="light">Licht</option>
+              </select>
+            </div>
+            <div class="pop-login" id="dcLogin"></div>
+          </div>
+        </div>
+        <button class="icon-btn burger" id="burger" aria-label="Menu openen" aria-expanded="false" aria-controls="links"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="sec first">
+      <div class="wrap">
+        <a href="/" class="back reveal"><span data-i="left"></span> Terug naar home</a>
+        <header class="sec-h reveal"><p class="eyebrow">Privacyverklaring</p><h1 class="page-h">Hoe ik met je gegevens omga</h1>
+          <p class="muted" id="legalNoot">Laatst bijgewerkt: 30 september 2026</p></header>
+        <article class="glass legal-doc reveal">
+
+          <p class="taalnoot" hidden>Deze tekst is alleen in het Nederlands beschikbaar.</p>
+          <h3>1. Wie is verantwoordelijk?</h3>
+          <p>Deze website is van Vincent van Dam, gevestigd in Almere. Ik ben verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze verklaring. Vragen hierover kun je stellen via <a class="lnk" href="mailto:Vandamvincent6@gmail.com">Vandamvincent6@gmail.com</a>.</p>
+
+          <h3>2. Welke gegevens verwerk ik en waarom?</h3>
+          <p><strong>Een bezoek aan de website.</strong> Om de pagina's te kunnen tonen en de site te beveiligen, verwerkt de server kortdurend technische gegevens, zoals je IP-adres, het type browser en het tijdstip van je bezoek. Ik gebruik geen analyse-, statistiek- of trackingdiensten en bouw geen bezoekersprofielen op.</p>
+          <p><strong>Contact.</strong> Neem je contact met me op via het contactformulier of e-mail, dan gebruik ik je naam, e-mailadres, onderwerp en bericht alleen om te reageren. Ik deel die gegevens niet met anderen en bewaar ze niet langer dan nodig is voor de afhandeling van je vraag, in ieder geval niet langer dan 12 maanden na het laatste contact.</p>
+          <p><strong>Inloggen via Discord.</strong> Een klein deel van de site is alleen bedoeld voor mezelf en voor door mij aangewezen personen. Log je daar in via Discord, dan verwerk ik je Discord-ID, gebruikersnaam, profielfoto en je lidmaatschap en rollen in een bepaalde Discord-server, om te bepalen of je toegang hebt. Deze gegevens worden op mijn eigen server bewaard zolang je sessie duurt (maximaal 7 dagen) en worden niet gedeeld met anderen. Je kunt op elk moment uitloggen; je sessie wordt dan verwijderd.</p>
+
+          <h3>3. Cookies en lokale opslag</h3>
+          <p>Deze website gebruikt alleen functionele opslag, die nodig is voor de werking of voor je eigen voorkeuren. Hiervoor is geen toestemming nodig. Er worden geen tracking- of advertentiecookies gebruikt.</p>
+          <ul>
+            <li><strong>thema, taal</strong> (lokale opslag in je browser): onthoudt of je de donkere of lichte weergave gebruikt en welke taal je hebt gekozen.</li>
+            <li><strong>dc_sess</strong> (cookie, alleen na inloggen): houdt je ingelogde sessie vast, maximaal 7 dagen.</li>
+            <li><strong>dc_state</strong> (cookie, alleen tijdens inloggen): beveiligt het inlogproces, maximaal 10 minuten.</li>
+            <li><strong>dcMe</strong> (lokale opslag, alleen na inloggen): onthoudt je naam en profielfoto zodat de pagina sneller laadt.</li>
+          </ul>
+          <p>Je kunt cookies en lokale opslag altijd verwijderen via de instellingen van je browser.</p>
+
+          <h3>4. Diensten van derden</h3>
+          <ul>
+            <li><strong>Google Fonts:</strong> de lettertypen worden geladen vanaf servers van Google. Google ontvangt daarbij je IP-adres.</li>
+            <li><strong>jsDelivr:</strong> een script voor soepel scrollen wordt geladen via dit netwerk voor bestandsverspreiding, dat daarbij je IP-adres ontvangt.</li>
+            <li><strong>Discord:</strong> alleen wanneer je inlogt. Discord verwerkt je gegevens volgens het eigen privacybeleid.</li>
+            <li><strong>Externe links</strong> (GitHub, LinkedIn, Instagram, Discord en andere sites): op die sites gelden hun eigen privacyregels. Ik ben daar niet verantwoordelijk voor.</li>
+          </ul>
+          <p>Ik verkoop geen gegevens en gebruik ze niet voor reclame of geautomatiseerde besluitvorming.</p>
+
+          <h3>5. Beveiliging</h3>
+          <p>De website is alleen bereikbaar via een beveiligde verbinding (HTTPS). De gegevens die ik verwerk staan op mijn eigen server en zijn niet openbaar toegankelijk.</p>
+
+          <h3>6. Jouw rechten</h3>
+          <p>Je hebt het recht om je gegevens in te zien, te laten verbeteren of te laten verwijderen, de verwerking te laten beperken, bezwaar te maken en je gegevens over te laten dragen. Stuur daarvoor een bericht naar <a class="lnk" href="mailto:Vandamvincent6@gmail.com">Vandamvincent6@gmail.com</a>. Ik reageer binnen een maand. Ben je het niet eens met hoe ik met je gegevens omga, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens (<a class="lnk" href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer">autoriteitpersoonsgegevens.nl</a>).</p>
+
+          <h3>7. Wijzigingen</h3>
+          <p>Ik kan deze verklaring aanpassen, bijvoorbeeld als de website verandert. De datum bovenaan laat zien wanneer de tekst voor het laatst is bijgewerkt.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div><p class="foot-name" id="footName"></p><p class="muted" id="footText"></p></div>
+      <nav aria-label="Footernavigatie"><p class="foot-h">Navigatie</p><ul id="footLinks"></ul></nav>
+      <div><p class="foot-h">Sociaal</p><div class="socials" id="footSocials"></div></div>
+    </div>
+    <div class="wrap foot-bottom"><span id="copy"></span><nav class="legal" aria-label="Juridisch"><a href="/privacy">Privacyverklaring</a><a href="/disclaimer">Disclaimer</a></nav><a href="#home">Terug naar boven ↑</a></div>
+  </footer>
+
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-back" data-close></div>
+    <div class="modal-card glass" data-lenis-prevent><button class="icon-btn modal-x" data-close aria-label="Sluiten"></button><div id="modalBody"></div></div>
+  </div>
+
+
+  <script src="content.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="fx.js"></script>
+</body>
+</html>

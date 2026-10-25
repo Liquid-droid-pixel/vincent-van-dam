@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="nl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincent van Dam</title>
+  <meta name="description" content="Persoonlijke website: over mij, vaardigheden, projecten, ervaring en meer.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>try{var t=localStorage.getItem("thema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#home">Ga naar inhoud</a>
+  <div class="bg-fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="grid"></i></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="#home" class="logo" id="logo" aria-label="Naar boven"></a>
+      <nav class="links" id="links" aria-label="Hoofdnavigatie"></nav>
+      <div class="tools">
+        <div class="pop-wrap">
+          <button class="icon-btn" id="prefBtn" aria-label="Voorkeuren" aria-expanded="false" aria-controls="prefMenu"></button>
+          <div class="pop" id="prefMenu" hidden>
+            <p class="pop-h">Voorkeuren</p>
+            <div class="pop-row"><span>Taal</span>
+              <select id="lang" aria-label="Taal" translate="no">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+            <div class="pop-row"><span>Thema</span>
+              <select id="themeSel" aria-label="Thema">
+                <option value="dark">Donker</option>
+                <option value="light">Licht</option>
+              </select>
+            </div>
+            <div class="pop-login" id="dcLogin"></div>
+          </div>
+        </div>
+        <button class="icon-btn burger" id="burger" aria-label="Menu openen" aria-expanded="false" aria-controls="links"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal" id="heroLabel"></p>
+          <h1 class="reveal" id="heroTitle"></h1>
+          <p class="role reveal" id="heroRole"></p>
+          <p class="lead reveal" id="heroTagline"></p>
+          <div class="cta reveal">
+            <button type="button" class="btn primary" id="printCv">Download CV (PDF) <span data-i="arrow"></span></button>
+            <a href="/contact" class="btn ghost">Neem contact op</a>
+          </div>
+          <ul class="facts reveal" id="heroFacts"></ul>
+          <p class="avail reveal" id="heroAvail"></p>
+        </div>
+        <div class="hero-photo reveal" id="heroPhoto"></div>
+      </div>
+      <div class="wrap"><div class="stats reveal" id="stats"></div></div>
+      <a href="#profiel" class="scroll" aria-label="Scroll naar beneden"><span></span>Scroll</a>
+    </section>
+
+    <section id="profiel" class="sec">
+      <div class="wrap">
+        <header class="sec-h reveal"><p class="eyebrow">Profiel</p><h2>Professioneel profiel</h2></header>
+        <div class="prof-grid">
+          <div class="glass big-text reveal" id="profielTekst"></div>
+          <div class="glass card side-card reveal">
+            <h5 class="cv-h">Persoonlijke gegevens</h5><ul class="cv-info" id="gegevens"></ul>
+            <h5 class="cv-h">Talen</h5><ul class="cv-lang" id="talen"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ervaring" class="sec">
+      <div class="wrap">
+        <header class="sec-h reveal"><p class="eyebrow">Ervaring</p><h2>Werkervaring &amp; opleiding</h2></header>
+        <h3 class="sub reveal">Werkervaring</h3>
+        <div class="glass cv-list reveal" id="werkLijst"></div>
+        <h3 class="sub reveal">Opleiding</h3>
+        <div class="glass cv-list reveal" id="opleidingLijst"></div>
+      </div>
+    </section>
+
+    <section id="vaardigheden" class="sec">
+      <div class="wrap">
+        <header class="sec-h reveal"><p class="eyebrow">Vaardigheden</p><h2>Wat ik kan</h2>
+          <p class="muted">Een overzicht van mijn technische bagage, verdeeld in categorieën.</p></header>
+        <div id="skills"></div>
+      </div>
+    </section>
+
+    <section id="meer" class="sec">
+      <div class="wrap">
+        <header class="sec-h reveal"><p class="eyebrow">Meer</p><h2>Ontdek meer</h2></header>
+        <div class="grid2">
+          <a class="glass card linkcard reveal" href="/projecten">
+            <div class="ico"><span data-i="code"></span></div><h4>Projecten</h4>
+            <p>Een overzicht van de dingen die ik heb gebouwd, met filters en details per project.</p>
+            <span class="more">Naar projecten <span data-i="arrow"></span></span>
+          </a>
+          <a class="glass card linkcard reveal" href="/certificaten">
+            <div class="ico"><span data-i="award"></span></div><h4>Certificaten</h4>
+            <p>Mijn certificaten, diploma's en belangrijke mijlpalen.</p>
+            <span class="more">Naar certificaten <span data-i="arrow"></span></span>
+          </a>
+          <a class="glass card linkcard reveal" href="/interesses">
+            <div class="ico"><span data-i="sparkles"></span></div><h4>Interesses</h4>
+            <p>Wat ik doe buiten mijn werk: zeilen, gamen en meer.</p>
+            <span class="more">Naar interesses <span data-i="arrow"></span></span>
+          </a>
+          <a class="glass card linkcard reveal" href="/contact">
+            <div class="ico"><span data-i="mail"></span></div><h4>Contact</h4>
+            <p>Een vraag of samenwerken? Neem gerust contact met me op.</p>
+            <span class="more">Naar contact <span data-i="arrow"></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div><p class="foot-name" id="footName"></p><p class="muted" id="footText"></p></div>
+      <nav aria-label="Footernavigatie"><p class="foot-h">Navigatie</p><ul id="footLinks"></ul></nav>
+      <div><p class="foot-h">Sociaal</p><div class="socials" id="footSocials"></div></div>
+    </div>
+    <div class="wrap foot-bottom"><span id="copy"></span><nav class="legal" aria-label="Juridisch"><a href="/privacy">Privacyverklaring</a><a href="/disclaimer">Disclaimer</a></nav><a href="#home">Terug naar boven ↑</a></div>
+  </footer>
+
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-back" data-close></div>
+    <div class="modal-card glass" data-lenis-prevent><button class="icon-btn modal-x" data-close aria-label="Sluiten"></button><div id="modalBody"></div></div>
+  </div>
+
+
+  <script src="content.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="fx.js"></script>
+</body>
+</html>

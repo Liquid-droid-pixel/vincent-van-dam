@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincent van Dam</title>
+  <meta name="description" content="Persoonlijke website: over mij, vaardigheden, projecten, ervaring en meer.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>try{var t=localStorage.getItem("thema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="interesses" data-title="Interesses">
+  <a class="skip" href="#home">Ga naar inhoud</a>
+  <div class="bg-fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="grid"></i></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="#home" class="logo" id="logo" aria-label="Naar boven"></a>
+      <nav class="links" id="links" aria-label="Hoofdnavigatie"></nav>
+      <div class="tools">
+        <div class="pop-wrap">
+          <button class="icon-btn" id="prefBtn" aria-label="Voorkeuren" aria-expanded="false" aria-controls="prefMenu"></button>
+          <div class="pop" id="prefMenu" hidden>
+            <p class="pop-h">Voorkeuren</p>
+            <div class="pop-row"><span>Taal</span>
+              <select id="lang" aria-label="Taal" translate="no">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+            <div class="pop-row"><span>Thema</span>
+              <select id="themeSel" aria-label="Thema">
+                <option value="dark">Donker</option>
+                <option value="light">Licht</option>
+              </select>
+            </div>
+            <div class="pop-login" id="dcLogin"></div>
+          </div>
+        </div>
+        <button class="icon-btn burger" id="burger" aria-label="Menu openen" aria-expanded="false" aria-controls="links"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="sec first">
+      <div class="wrap">
+        <a href="/" class="back reveal"><span data-i="left"></span> Terug naar home</a>
+        
+        <header class="sec-h reveal"><p class="eyebrow">Interesses</p><h1 class="page-h">Buiten mijn werk</h1>
+          <p class="muted">Waar ik energie van krijg zodra de laptop dichtgaat.</p></header>
+        <div class="grid3 interests" id="interesses-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div><p class="foot-name" id="footName"></p><p class="muted" id="footText"></p></div>
+      <nav aria-label="Footernavigatie"><p class="foot-h">Navigatie</p><ul id="footLinks"></ul></nav>
+      <div><p class="foot-h">Sociaal</p><div class="socials" id="footSocials"></div></div>
+    </div>
+    <div class="wrap foot-bottom"><span id="copy"></span><nav class="legal" aria-label="Juridisch"><a href="/privacy">Privacyverklaring</a><a href="/disclaimer">Disclaimer</a></nav><a href="#home">Terug naar boven ↑</a></div>
+  </footer>
+
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-back" data-close></div>
+    <div class="modal-card glass" data-lenis-prevent><button class="icon-btn modal-x" data-close aria-label="Sluiten"></button><div id="modalBody"></div></div>
+  </div>
+
+
+  <script src="content.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="fx.js"></script>
+</body>
+</html>

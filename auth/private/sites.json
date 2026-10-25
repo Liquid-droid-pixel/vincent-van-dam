@@ -1,0 +1,20 @@
+[
+  {
+    "naam": "Hyperdashboard",
+    "icoon": "sliders",
+    "tekst": "",
+    "url": "https://hyperdashboard.vandamvincent.nl"
+  },
+  {
+    "naam": "Site_manager",
+    "icoon": "globe",
+    "tekst": "",
+    "url": "https://sitemanager.vandamvincent.nl"
+  },
+  {
+    "naam": "Maven Builder",
+    "icoon": "wrench",
+    "tekst": "",
+    "url": "https://maven.vandamvincent.nl"
+  }
+]

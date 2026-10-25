@@ -1,0 +1,25 @@
+{
+  "clientId": "1554468394923851818",
+  "clientSecret": "0MwBfp_FhjLfqU4stAGBdu_vQ91ziMG0",
+  "allowedUserId": "706452011738202202",
+  "requiredGuildId": "1496178691192127578",
+  "privateRoleId": "1496197331463438476",
+  "rolControleSeconden": 20,
+  "redirectUri": "https://www.vandamvincent.nl/auth/callback",
+  "sessionSecret": "1f253f4ac09e38fa3f4e7c6baa5ce8214d504b2547456801285b8d053ff3b863b9e90f0c402ffbcb3c602894c714ccc9",
+  "sessionDagen": 7,
+  "port": 8017,
+  "cookieDomain": "vandamvincent.nl",
+  "hoofdAdres": "https://www.vandamvincent.nl",
+  "apps": {
+    "hyperdashboard": {
+      "alleenEigenaar": false
+    },
+    "sitemanager": {
+      "alleenEigenaar": true
+    },
+    "maven": {
+      "alleenEigenaar": true
+    }
+  }
+}
